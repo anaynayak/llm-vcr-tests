@@ -1,0 +1,58 @@
+interactions:
+- request:
+    body: '{"messages":[{"role":"user","content":"What is pytest?"}],"model":"o3-mini"}'
+    headers:
+      accept:
+      - application/json
+      accept-encoding:
+      - gzip, deflate
+      connection:
+      - keep-alive
+      content-length:
+      - '76'
+      content-type:
+      - application/json
+      user-agent:
+      - OpenAI/Python 1.63.2
+    method: POST
+    uri: https://api.openai.com/v1/chat/completions
+  response:
+    body:
+      string: "{\n  \"id\": \"chatcmpl-B3ljAwsvwZ8zV4UbkASdW1P1TzPRA\",\n  \"object\":
+        \"chat.completion\",\n  \"created\": 1740238148,\n  \"model\": \"o3-mini-2025-01-31\",\n
+        \ \"choices\": [\n    {\n      \"index\": 0,\n      \"message\": {\n        \"role\":
+        \"assistant\",\n        \"content\": \"pytest is a testing framework for Python
+        that makes it easy to write and run tests for your code. It's popular for
+        several reasons:\\n\\n\u2022 Simple Syntax: Writing tests with pytest often
+        involves just writing regular Python functions whose names start with \\\"test_\\\".
+        This simplicity makes tests easy to read and write.\\n\\n\u2022 Automatic
+        Test Discovery: pytest automatically finds test files and functions in your
+        project, so you don't need to manually specify which tests to run.\\n\\n\u2022
+        Powerful Fixtures: Fixtures in pytest allow you to set up and tear down test
+        environments, making it easier to manage resources like temporary files, database
+        connections, or shared objects that may need to be prepared before tests run.\\n\\n\u2022
+        Parameterized Testing: You can use parameterized tests to run the same test
+        function with different input values, reducing code duplication and improving
+        test coverage.\\n\\n\u2022 Rich Plugin Ecosystem: pytest has a large ecosystem
+        of plugins that add functionality like parallel test execution, code coverage
+        reporting, and integration with other tools.\\n\\nOverall, pytest is designed
+        to be flexible and scalable, making it suitable for both small projects and
+        large, complex codebases.\",\n        \"refusal\": null\n      },\n      \"finish_reason\":
+        \"stop\"\n    }\n  ],\n  \"usage\": {\n    \"prompt_tokens\": 10,\n    \"completion_tokens\":
+        419,\n    \"total_tokens\": 429,\n    \"prompt_tokens_details\": {\n      \"cached_tokens\":
+        0,\n      \"audio_tokens\": 0\n    },\n    \"completion_tokens_details\":
+        {\n      \"reasoning_tokens\": 192,\n      \"audio_tokens\": 0,\n      \"accepted_prediction_tokens\":
+        0,\n      \"rejected_prediction_tokens\": 0\n    }\n  },\n  \"service_tier\":
+        \"default\",\n  \"system_fingerprint\": \"fp_42bfad963b\"\n}\n"
+    headers:
+      Content-Type:
+      - application/json
+      Set-Cookie: cookie
+      Transfer-Encoding:
+      - chunked
+      content-length:
+      - '1969'
+    status:
+      code: 200
+      message: OK
+version: 1
